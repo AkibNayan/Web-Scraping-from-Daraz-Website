@@ -1,0 +1,92 @@
+[
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "daraz",
+        "description": "daraz",
+        "peekOfCode": "url = \"https://www.daraz.com.bd/smartphones/?ajax=true&page=1&spm=a2a0e.home.cate_6.1.735212f7I5rFs6\"\ntotal_page = 12\ndata = []\nfor page_no in range(1, total_page+1):\n  url = f\"https://www.daraz.com.bd/smartphones/?ajax=true&page={page_no}&spm=a2a0e.home.cate_6.1.735212f7I5rFs6\"\n  res = re.get(url)\n  response = res.json()\n  total_items = len(response[\"mods\"][\"listItems\"])\n  for i in range(total_items):\n    try:",
+        "detail": "daraz",
+        "documentation": {}
+    },
+    {
+        "label": "total_page",
+        "kind": 5,
+        "importPath": "daraz",
+        "description": "daraz",
+        "peekOfCode": "total_page = 12\ndata = []\nfor page_no in range(1, total_page+1):\n  url = f\"https://www.daraz.com.bd/smartphones/?ajax=true&page={page_no}&spm=a2a0e.home.cate_6.1.735212f7I5rFs6\"\n  res = re.get(url)\n  response = res.json()\n  total_items = len(response[\"mods\"][\"listItems\"])\n  for i in range(total_items):\n    try:\n      original_price = response[\"mods\"][\"listItems\"][i][\"originalPrice\"]",
+        "detail": "daraz",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "daraz",
+        "description": "daraz",
+        "peekOfCode": "data = []\nfor page_no in range(1, total_page+1):\n  url = f\"https://www.daraz.com.bd/smartphones/?ajax=true&page={page_no}&spm=a2a0e.home.cate_6.1.735212f7I5rFs6\"\n  res = re.get(url)\n  response = res.json()\n  total_items = len(response[\"mods\"][\"listItems\"])\n  for i in range(total_items):\n    try:\n      original_price = response[\"mods\"][\"listItems\"][i][\"originalPrice\"]\n      price = response[\"mods\"][\"listItems\"][i][\"price\"]",
+        "detail": "daraz",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "daraz",
+        "description": "daraz",
+        "peekOfCode": "df = pd.DataFrame(data)\ndf.to_csv('Daraz Smart Phone Data', index = False)",
+        "detail": "daraz",
+        "documentation": {}
+    },
+    {
+        "label": "total_page",
+        "kind": 5,
+        "importPath": "darazFeaturedPhone",
+        "description": "darazFeaturedPhone",
+        "peekOfCode": "total_page = 14\ndata = []\nfor page_no in range(1, total_page+1):\n  url = f\"https://www.daraz.com.bd/featurephones/?ajax=true&page={page_no}&spm=a2a0e.home.cate_6.2.26c612f7AN2o92\"\n  res = re.get(url)\n  response = res.json()\n  total_items = len(response[\"mods\"][\"listItems\"])\n  for i in range(total_items):\n    try:\n      originalPrice = response[\"mods\"][\"listItems\"][i][\"originalPrice\"]",
+        "detail": "darazFeaturedPhone",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "darazFeaturedPhone",
+        "description": "darazFeaturedPhone",
+        "peekOfCode": "data = []\nfor page_no in range(1, total_page+1):\n  url = f\"https://www.daraz.com.bd/featurephones/?ajax=true&page={page_no}&spm=a2a0e.home.cate_6.2.26c612f7AN2o92\"\n  res = re.get(url)\n  response = res.json()\n  total_items = len(response[\"mods\"][\"listItems\"])\n  for i in range(total_items):\n    try:\n      originalPrice = response[\"mods\"][\"listItems\"][i][\"originalPrice\"]\n      price = response[\"mods\"][\"listItems\"][i][\"price\"]",
+        "detail": "darazFeaturedPhone",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "darazFeaturedPhone",
+        "description": "darazFeaturedPhone",
+        "peekOfCode": "df = pd.DataFrame(data)\ndf.to_csv(\"daraz featured phone\", index=False)",
+        "detail": "darazFeaturedPhone",
+        "documentation": {}
+    }
+]
