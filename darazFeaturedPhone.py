@@ -35,3 +35,12 @@ for page_no in range(1, total_page+1):
   print(f"Data Scraping from daraz featured phone {page_no} no page is done")
 df = pd.DataFrame(data)
 df.to_csv("daraz featured phone", index=False)
+
+
+
+
+
+
+   
+    
+

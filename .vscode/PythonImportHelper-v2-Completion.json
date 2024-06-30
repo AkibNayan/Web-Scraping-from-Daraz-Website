@@ -27,6 +27,56 @@
         "documentation": {}
     },
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "importPath": "selenium.webdriver.chrome.service",
+        "description": "selenium.webdriver.chrome.service",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.service",
+        "documentation": {}
+    },
+    {
+        "label": "ChromeDriverManager",
+        "importPath": "webdriver_manager.chrome",
+        "description": "webdriver_manager.chrome",
+        "isExtraImport": true,
+        "detail": "webdriver_manager.chrome",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
         "label": "url",
         "kind": 5,
         "importPath": "daraz",
@@ -63,6 +113,96 @@
         "documentation": {}
     },
     {
+        "label": "option",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "option = webdriver.ChromeOptions()\ndriver = webdriver.Chrome(service=Service(\n    ChromeDriverManager().install()), options=option)\n\"\"\"driver.get(\"https://www.daraz.com.bd/smartphones/?spm=a2a0e.home.cate_6.1.735212f7SWIYUE\")\"\"\"\n\"\"\"titles = driver.find_elements('xpath', '//div[@id=\"id-title\"]')\nfor title in titles:\n    print(title.text)\"\"\"\n\"\"\"ratings = driver.find_elements('xpath', '//span[@class=\"ratig-num--KNake rating--pwPrV\"]')\nfor rating in ratings:\n    print(rating.text)\"\"\"",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "driver = webdriver.Chrome(service=Service(\n    ChromeDriverManager().install()), options=option)\n\"\"\"driver.get(\"https://www.daraz.com.bd/smartphones/?spm=a2a0e.home.cate_6.1.735212f7SWIYUE\")\"\"\"\n\"\"\"titles = driver.find_elements('xpath', '//div[@id=\"id-title\"]')\nfor title in titles:\n    print(title.text)\"\"\"\n\"\"\"ratings = driver.find_elements('xpath', '//span[@class=\"ratig-num--KNake rating--pwPrV\"]')\nfor rating in ratings:\n    print(rating.text)\"\"\"\n\"\"\"ratings_count = driver.find_elements('xpath', '//span[@class=\"rating__review--ygkUy rating--pwPrV\"]')",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"titles",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "\"\"\"titles = driver.find_elements('xpath', '//div[@id=\"id-title\"]')\nfor title in titles:\n    print(title.text)\"\"\"\n\"\"\"ratings = driver.find_elements('xpath', '//span[@class=\"ratig-num--KNake rating--pwPrV\"]')\nfor rating in ratings:\n    print(rating.text)\"\"\"\n\"\"\"ratings_count = driver.find_elements('xpath', '//span[@class=\"rating__review--ygkUy rating--pwPrV\"]')\nfor rating_count in ratings_count:\n    print(rating_count.text)\"\"\"\n\"\"\"unit_solds = driver.find_elements('xpath', '//div[contains(text(), \"Sold\")]')",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"ratings",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "\"\"\"ratings = driver.find_elements('xpath', '//span[@class=\"ratig-num--KNake rating--pwPrV\"]')\nfor rating in ratings:\n    print(rating.text)\"\"\"\n\"\"\"ratings_count = driver.find_elements('xpath', '//span[@class=\"rating__review--ygkUy rating--pwPrV\"]')\nfor rating_count in ratings_count:\n    print(rating_count.text)\"\"\"\n\"\"\"unit_solds = driver.find_elements('xpath', '//div[contains(text(), \"Sold\")]')\nfor unit_sold in unit_solds:\n    print(unit_sold.text)\"\"\"\n\"\"\"prices = driver.find_elements('xpath', '//span[@class=\"currency--GVKjl\"]')",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"ratings_count",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "\"\"\"ratings_count = driver.find_elements('xpath', '//span[@class=\"rating__review--ygkUy rating--pwPrV\"]')\nfor rating_count in ratings_count:\n    print(rating_count.text)\"\"\"\n\"\"\"unit_solds = driver.find_elements('xpath', '//div[contains(text(), \"Sold\")]')\nfor unit_sold in unit_solds:\n    print(unit_sold.text)\"\"\"\n\"\"\"prices = driver.find_elements('xpath', '//span[@class=\"currency--GVKjl\"]')\nfor price in prices:\n    print(price.text)\"\"\"\n\"\"\"org_prices = driver.find_elements('xpath', '//del[@class=\"currency--GVKjl\"]')",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"unit_solds",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "\"\"\"unit_solds = driver.find_elements('xpath', '//div[contains(text(), \"Sold\")]')\nfor unit_sold in unit_solds:\n    print(unit_sold.text)\"\"\"\n\"\"\"prices = driver.find_elements('xpath', '//span[@class=\"currency--GVKjl\"]')\nfor price in prices:\n    print(price.text)\"\"\"\n\"\"\"org_prices = driver.find_elements('xpath', '//del[@class=\"currency--GVKjl\"]')\nfor org_price in org_prices:\n    print(org_price.text)\"\"\"\ndata = []",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"prices",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "\"\"\"prices = driver.find_elements('xpath', '//span[@class=\"currency--GVKjl\"]')\nfor price in prices:\n    print(price.text)\"\"\"\n\"\"\"org_prices = driver.find_elements('xpath', '//del[@class=\"currency--GVKjl\"]')\nfor org_price in org_prices:\n    print(org_price.text)\"\"\"\ndata = []\nfor page in range(1, 14):\n    driver.get(f'https://www.daraz.com.bd/smartphones/?page={page}&spm=a2a0e.searchlistcategory.pagination.2.2d32310cPwzPfj')\n    # Not to detect as Bot use sleep()",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"org_prices",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "\"\"\"org_prices = driver.find_elements('xpath', '//del[@class=\"currency--GVKjl\"]')\nfor org_price in org_prices:\n    print(org_price.text)\"\"\"\ndata = []\nfor page in range(1, 14):\n    driver.get(f'https://www.daraz.com.bd/smartphones/?page={page}&spm=a2a0e.searchlistcategory.pagination.2.2d32310cPwzPfj')\n    # Not to detect as Bot use sleep()\n    time.sleep(1)\n    titles = driver.find_elements('xpath', '//div[@id=\"id-title\"]')\n    totalTitle = len(titles)",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "data = []\nfor page in range(1, 14):\n    driver.get(f'https://www.daraz.com.bd/smartphones/?page={page}&spm=a2a0e.searchlistcategory.pagination.2.2d32310cPwzPfj')\n    # Not to detect as Bot use sleep()\n    time.sleep(1)\n    titles = driver.find_elements('xpath', '//div[@id=\"id-title\"]')\n    totalTitle = len(titles)\n    for item in range(1, totalTitle+1):\n        try:\n            title = driver.find_element(",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"df",
+        "kind": 5,
+        "importPath": "darazDataSelenium",
+        "description": "darazDataSelenium",
+        "peekOfCode": "\"\"\"df = pd.DataFrame(data)\ndf.to_csv(\"DarazSPhoneDataSeleniumCrack.csv\", index=False)\"\"\"\nprint(data)",
+        "detail": "darazDataSelenium",
+        "documentation": {}
+    },
+    {
         "label": "total_page",
         "kind": 5,
         "importPath": "darazFeaturedPhone",
@@ -87,6 +227,42 @@
         "description": "darazFeaturedPhone",
         "peekOfCode": "df = pd.DataFrame(data)\ndf.to_csv(\"daraz featured phone\", index=False)",
         "detail": "darazFeaturedPhone",
+        "documentation": {}
+    },
+    {
+        "label": "page_no",
+        "kind": 5,
+        "importPath": "geeksforgeeks",
+        "description": "geeksforgeeks",
+        "peekOfCode": "page_no = 10\ndata = []\ncounter = 1\nfor page in range(1, page_no+1):\n  re = requests.get(f\"https://utilapi.geeksforgeeks.org/api/articles/?page={page}&gblog=true\")\n  response = re.json()\n  length = len(response)\n  for i in range(0, length):\n    try:\n      art_title = response[i][\"article_title\"]",
+        "detail": "geeksforgeeks",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "geeksforgeeks",
+        "description": "geeksforgeeks",
+        "peekOfCode": "data = []\ncounter = 1\nfor page in range(1, page_no+1):\n  re = requests.get(f\"https://utilapi.geeksforgeeks.org/api/articles/?page={page}&gblog=true\")\n  response = re.json()\n  length = len(response)\n  for i in range(0, length):\n    try:\n      art_title = response[i][\"article_title\"]\n    except:",
+        "detail": "geeksforgeeks",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": "geeksforgeeks",
+        "description": "geeksforgeeks",
+        "peekOfCode": "counter = 1\nfor page in range(1, page_no+1):\n  re = requests.get(f\"https://utilapi.geeksforgeeks.org/api/articles/?page={page}&gblog=true\")\n  response = re.json()\n  length = len(response)\n  for i in range(0, length):\n    try:\n      art_title = response[i][\"article_title\"]\n    except:\n      art_title = \"Not Available\"",
+        "detail": "geeksforgeeks",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "geeksforgeeks",
+        "description": "geeksforgeeks",
+        "peekOfCode": "df = pandas.DataFrame(data)\ndf.to_csv(\"GeeksforGeeks Article Title\", index=False)",
+        "detail": "geeksforgeeks",
         "documentation": {}
     }
 ]
